@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00424242"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/title_shape"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="" />
+
+
+
+
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/yellow"
+        android:layout_below="@+id/titleTV"
+        />
+
+    <TextView
+        android:id="@+id/massageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/card_shape"
+        android:textColor="@color/lightDark"
+        android:textSize="14sp"
+        android:layout_below="@+id/div"
+        android:text=""
+        android:elevation="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/massageTV"
+        android:textColor="@color/lightDark"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</RelativeLayout>
